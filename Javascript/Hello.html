@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <script>
+
+            function greet(){
+                
+                let name = document.querySelector('#name').value;
+                alert('Hello, '+ name);
+            }
+
+        </script>
+        <title>hello</title>
+    </head>
+    <body>
+        <form onsubmit="greet(); return false;">
+            <input autocomplete="off" autofocus id="name" name="Name" placeholder="Name" type="text">
+            <input type="submit" value="submit">
+        </form>
+    </body>
+</html>
