@@ -3,20 +3,46 @@
 <html>
     <head>
         <script>
-
-            function greet(){
+            
+    
+            document.addEventListener('DOMContentLoaded', function(){
+            document.querySelector('form').addEventListener('submit', function (event){
                 
+                alert('hello, '+ document.querySelector('#name').value);
+                event.preventDefault();
+            });
+            });
+            
+        </script>
+            <!-- <script>
+                
+                function greet(){
+                    
                 let name = document.querySelector('#name').value;
                 alert('Hello, '+ name);
-            }
-
-        </script>
+                }
+                
+            </script> -->
         <title>hello</title>
     </head>
     <body>
-        <form onsubmit="greet(); return false;">
+        <!-- <form onsubmit="greet(); return false;"> -->
+
+        <form>
             <input autocomplete="off" autofocus id="name" name="Name" placeholder="Name" type="text">
             <input type="submit" value="submit">
         </form>
+        <!-- <script>
+            
+    
+            
+            document.querySelector('form').addEventListener('submit', function (event){
+                
+                alert('hello, '+ document.querySelector('#name').value);
+                event.preventDefault();
+            });
+            
+        </script> -->
+        
     </body>
 </html>

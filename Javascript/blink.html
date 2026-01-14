@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>blink</title>
+    </head>
+    <body>
+        <script>
+            function blink(){
+                let body=document.querySelector('body');
+
+                if(body.style.visibility=='hidden') body.style.visibility='visible';
+                else body.style.visibility='hidden';
+            }
+
+            window.setInterval(blink, 500);
+            
+        </script>
+
+        <p>Hello, world</p>
+    </body>
+
+</html>
