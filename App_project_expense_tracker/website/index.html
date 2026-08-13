@@ -9,108 +9,119 @@
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 </head>
 <body>
-  <header class="nav">
-    <div class="nav-inner">
-      <a class="brand" href="index.html">
-        <span class="brand-logo">ET</span>
-        <span class="brand-name">Expense Tracker</span>
-      </a>
-      <nav class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="#features">Features</a>
-        <a href="#download">Download</a>
-        <a href="privacy.html">Privacy</a>
-        <a href="terms.html">Terms</a>
-      </nav>
-    </div>
-  </header>
 
   <main>
+    <!-- ══ HERO ══ -->
     <section class="hero">
-      <div class="hero-inner">
-        <h1>Take control of your money</h1>
-        <p class="hero-sub">
-          Expense Tracker is a free, private way to track spending, budgets,
-          savings goals, debts, and planned payments — all in one app. Your
-          data stays in your own private cloud account.
-        </p>
-        <div class="hero-buttons">
-          <a class="btn btn-primary" href="#download">Download the app</a>
-          <a class="btn btn-secondary" href="#features">See features</a>
+      <div class="hero-grid">
+        <div class="hero-content">
+          <div class="hero-label fade-up fade-up-1"><svg class="icon icon-xs icon-fill"><use href="assets/icons.svg#icon-star"/></svg> Free & Private — No Ads</div>
+          <h1 class="fade-up fade-up-2">Take control of<br><span>your money</span></h1>
+          <p class="hero-sub fade-up fade-up-3">
+            Track spending, set budgets, hit savings goals, and manage debts — all in one beautifully simple app. Your data stays in your own private account.
+          </p>
+          <div class="hero-actions fade-up fade-up-4">
+            <a class="btn btn-primary btn-lg" href="download.html"><svg class="icon icon-sm"><use href="assets/icons.svg#icon-download"/></svg> Download Free</a>
+            <a class="btn btn-secondary btn-lg" href="features.html">See Features</a>
+          </div>
+          <div class="hero-stats fade-up fade-up-4">
+            <div>
+              <div class="hero-stat-num">100%</div>
+              <div class="hero-stat-label">Private data</div>
+            </div>
+            <div>
+              <div class="hero-stat-num">Free</div>
+              <div class="hero-stat-label">Always free</div>
+            </div>
+            <div>
+              <div class="hero-stat-num">Offline</div>
+              <div class="hero-stat-label">Works anywhere</div>
+            </div>
+          </div>
         </div>
-      </div>
-    </section>
-
-    <section id="features" class="section">
-      <div class="section-inner">
-        <h2>Everything you need to manage your finances</h2>
-        <div class="grid">
-          <div class="card">
-            <h3>💰 Expense tracking</h3>
-            <p>Record income and expenses in seconds with categories and notes.</p>
+        <div class="hero-visual">
+          <div class="hero-glow"></div>
+          <div class="phone-frame-secondary">
+            <img src="assets/app-budgets.png" alt="Budget tracking screen">
           </div>
-          <div class="card">
-            <h3>📊 Budgets</h3>
-            <p>Set monthly budgets per category and see progress at a glance.</p>
-          </div>
-          <div class="card">
-            <h3>🎯 Savings goals</h3>
-            <p>Save toward goals with deadlines and track your progress.</p>
-          </div>
-          <div class="card">
-            <h3>💳 Debt tracking</h3>
-            <p>Keep track of what you owe and what others owe you.</p>
-          </div>
-          <div class="card">
-            <h3>🔄 Private cloud sync</h3>
-            <p>Your data syncs to your verified account — no one else can see it.</p>
-          </div>
-          <div class="card">
-            <h3>🌍 Multi-currency</h3>
-            <p>View everything in your preferred currency with live rates.</p>
+          <div class="phone-frame">
+            <img src="assets/app-dashboard.png" alt="Expense tracker dashboard">
           </div>
         </div>
       </div>
     </section>
 
-    <section id="download" class="section section-accent">
-      <div class="section-inner">
-        <h2>Get Expense Tracker</h2>
-        <p class="section-sub">Free to download. Works offline, syncs when you're back online.</p>
+    <!-- ══ FEATURES PREVIEW ══ -->
+    <section class="section">
+      <div class="section-header reveal">
+        <div class="section-label"><svg class="icon icon-xs icon-fill"><use href="assets/icons.svg#icon-star"/></svg> Features</div>
+        <h2 class="section-title">Everything you need to manage<br><span>your finances</span></h2>
+        <p class="section-sub">Built from the ground up for simplicity. No clutter, no subscriptions — just the tools you need.</p>
+      </div>
+      <div class="features-grid">
+        <div class="card reveal">
+          <div class="card-icon"><svg class="icon"><use href="assets/icons.svg#icon-wallet"/></svg></div>
+          <h3>Expense Tracking</h3>
+          <p>Record income and expenses in seconds with customizable categories and notes.</p>
+        </div>
+        <div class="card reveal">
+          <div class="card-icon"><svg class="icon"><use href="assets/icons.svg#icon-chart"/></svg></div>
+          <h3>Budget Management</h3>
+          <p>Set monthly budgets per category and watch your progress at a glance.</p>
+        </div>
+        <div class="card reveal">
+          <div class="card-icon"><svg class="icon"><use href="assets/icons.svg#icon-target"/></svg></div>
+          <h3>Savings Goals</h3>
+          <p>Save toward goals with deadlines and track your progress every step of the way.</p>
+        </div>
+        <div class="card reveal">
+          <div class="card-icon"><svg class="icon"><use href="assets/icons.svg#icon-card"/></svg></div>
+          <h3>Debt Tracking</h3>
+          <p>Keep track of what you owe and what others owe you — never forget again.</p>
+        </div>
+        <div class="card reveal">
+          <div class="card-icon"><svg class="icon"><use href="assets/icons.svg#icon-lock"/></svg></div>
+          <h3>Private Cloud Sync</h3>
+          <p>Your data syncs to your verified account only — no one else can see it, ever.</p>
+        </div>
+        <div class="card reveal">
+          <div class="card-icon"><svg class="icon"><use href="assets/icons.svg#icon-globe"/></svg></div>
+          <h3>Multi-Currency</h3>
+          <p>View everything in your preferred currency with live exchange rates.</p>
+        </div>
+      </div>
+      <div style="text-align:center; margin-top: 40px;" class="reveal">
+        <a href="features.html" class="btn btn-ghost">View all features →</a>
+      </div>
+    </section>
+
+    <!-- ══ DOWNLOAD CTA ══ -->
+    <section class="section">
+      <div class="download-card reveal">
+        <div class="section-label" style="margin-bottom: 16px;"><svg class="icon icon-xs"><use href="assets/icons.svg#icon-download"/></svg> Download Now</div>
+        <h2 class="section-title">Get Expense Tracker<br><span>for free</span></h2>
+        <p style="color: var(--text-2); margin-top: 8px;">Works offline. Syncs when you're back online. No ads. No subscription.</p>
         <div class="download-buttons">
-          <a class="btn btn-play" href="https://play.google.com/store/apps/details?id=com.sakib.expensetracker" target="_blank" rel="noopener">
-            <span class="btn-icon">▶</span>
+          <span class="btn-store btn-play disabled" aria-disabled="true">
+            <span class="btn-store-icon"><svg class="icon icon-fill"><use href="assets/icons.svg#icon-play"/></svg></span>
             <span>
-              <span class="btn-small">Get it on</span>
-              <span class="btn-large">Google Play</span>
+              <span class="btn-store-label">Available soon on</span>
+              <span class="btn-store-name">Google Play</span>
             </span>
-          </a>
-          <a class="btn btn-dark" href="app/expense-tracker.apk" download>
-            <span class="btn-icon">⬇</span>
+          </span>
+          <a class="btn-store btn-apk" href="app/expense-tracker.apk" download>
+            <span class="btn-store-icon"><svg class="icon"><use href="assets/icons.svg#icon-download"/></svg></span>
             <span>
-              <span class="btn-small">Download APK</span>
-              <span class="btn-large">Android (direct)</span>
+              <span class="btn-store-label">Download APK</span>
+              <span class="btn-store-name">Android Direct</span>
             </span>
           </a>
         </div>
-        <p class="hint">The direct APK is handy when Google Play isn't available in your region.</p>
+        <p class="download-hint">The direct APK is handy when Google Play isn't available in your region.</p>
       </div>
     </section>
   </main>
 
-  <footer class="footer">
-    <div class="footer-inner">
-      <div class="footer-brand">
-        <span class="brand-logo">ET</span>
-        <span>Expense Tracker</span>
-      </div>
-      <div class="footer-links">
-        <a href="privacy.html">Privacy Policy</a>
-        <a href="terms.html">Terms of Service</a>
-        <a href="mailto:support@example.com">Contact</a>
-      </div>
-      <p class="footer-note">© 2026 Expense Tracker. All rights reserved.</p>
-    </div>
-  </footer>
+  <script src="assets/nav.js"></script>
 </body>
 </html>

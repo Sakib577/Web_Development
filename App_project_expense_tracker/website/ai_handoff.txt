@@ -1,0 +1,76 @@
+================================================================================
+AI HANDOFF DOCUMENTATION — EXPENSE TRACKER WEBSITE
+================================================================================
+Date: August 13, 2026
+Project: Expense Tracker Landing Website
+Path: /home/sakib577/Documents/Web_Development/App_project_expense_tracker/website
+
+--------------------------------------------------------------------------------
+1. PROJECT OVERVIEW & PURPOSE
+--------------------------------------------------------------------------------
+This directory contains the static marketing landing site for the Expense Tracker
+Android application. It highlights the app's features (private cloud sync, budget 
+tracking, savings goals, debt management, multi-currency support) and provides 
+direct download links (Google Play Store & direct APK).
+
+--------------------------------------------------------------------------------
+2. FILE STRUCTURE & ARCHITECTURE
+--------------------------------------------------------------------------------
+website/
+├── index.html            # Landing / Home Page
+├── features.html         # Detailed Features Page
+├── download.html         # Download Options & Device Requirements
+├── privacy.html          # Privacy Policy Page
+├── terms.html            # Terms of Service Page
+└── assets/
+    ├── style.css         # Main stylesheet (Modern Dark Theme Design System)
+    ├── nav.js            # Dynamic component injector (Navbar + Footer + Active State)
+    ├── favicon.svg       # Brand icon
+    ├── app-dashboard.png # Demo screenshot mockup (Dashboard)
+    ├── app-budgets.png   # Demo screenshot mockup (Budgets)
+    └── app-savings.png   # Demo screenshot mockup (Savings Goals)
+
+--------------------------------------------------------------------------------
+3. TECHNICAL HIGHLIGHTS & DESIGN SYSTEM
+--------------------------------------------------------------------------------
+- Design System: Custom Vanilla CSS with CSS custom properties (:root tokens).
+  - Palette: Dark Theme (#0d0e12 background) with Amber accents (#f59e0b).
+  - Typography: Inter (imported via Google Fonts).
+  - Components: Glassmorphic navigation header, floating phone mockups, 
+    interactive card components with hover animations, scroll-reveal effects.
+- Dynamic Header & Footer (nav.js):
+  - Injects consistent top navigation header and footer across all HTML pages.
+  - Automatically highlights the current active page link based on window location.
+  - Includes scroll-reveal IntersectionObserver logic for page animations.
+
+--------------------------------------------------------------------------------
+4. RECENT WORK COMPLETED
+--------------------------------------------------------------------------------
+- Transitioned site from single-page scroll layout to individual HTML pages 
+  (index.html, features.html, download.html, privacy.html, terms.html).
+- Generated demo Android app mockup screenshots (app-dashboard.png, 
+  app-budgets.png, app-savings.png) and integrated showcase sections.
+- Refined navigation bar: Removed redundant "Download" text link in favor 
+  of the single highlighted "Get the App" CTA button.
+- Google Play button now shows "Available soon on Google Play" (disabled/
+  non-clickable state) on both index.html and download.html because the app 
+  is not yet published to the Play Store. The direct APK link is the primary 
+  download route. Re-enable by swapping the `<span class="btn-store btn-play 
+  disabled">` back to an `<a>` pointing at the live Play Store URL once the 
+  app is published.
+
+--------------------------------------------------------------------------------
+5. SUGGESTED NEXT STEPS / AREAS FOR IMPROVEMENT FOR FUTURE AGENTS
+--------------------------------------------------------------------------------
+- Image Replacement: Replace the demo AI-generated app screenshots in 
+  `assets/` with actual high-resolution screenshots from the real Flutter app.
+- Mobile Navigation Menu: Add a hamburger toggle menu for small screen sizes
+  in `nav.js` / `style.css` if navigation items overflow on smaller devices.
+- Direct APK Link: Update the relative link `app/expense-tracker.apk` in 
+  `download.html` and `index.html` to point to the actual production APK file.
+- Google Play Launch: When the app is published on the Play Store, restore 
+  the Play Store button to a clickable `<a>` link (see Recent Work section)
+  so users can download from Google Play again.
+- Form / Contact Integration: Wire up `support@example.com` or add a working 
+  contact/feedback form.
+================================================================================
